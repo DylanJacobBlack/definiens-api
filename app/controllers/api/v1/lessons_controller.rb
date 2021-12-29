@@ -8,12 +8,8 @@ class Api::V1::LessonsController < Api::V1::BaseController
   end
 
   def create
-    @lesson = Lesson.new(lesson_params)
-    if @lesson.save
-      flash[:success] = "Lesson successfully created"
-    else
-      flash[:error] = "Something went wrong"
-    end
+    @lesson = Lesson.create(lesson_params)
+    json_response(@lesson, :created)
   end
 
   def lesson_params
