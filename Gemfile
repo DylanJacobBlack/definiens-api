@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.4'
 
-# Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible. 
+# Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible.
 gem 'rack-cors'
 # Add user authentication
 gem 'devise'
