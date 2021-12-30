@@ -9,7 +9,7 @@ class Api::V1::LessonsController < Api::V1::BaseController
 
   def create
     @lesson = Lesson.create(lesson_params)
-    json_response(@lesson, :created)
+    @lesson.nil? ? :not_found : :created
   end
 
   def lesson_params
