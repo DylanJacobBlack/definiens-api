@@ -30,9 +30,7 @@ Lesson.create(
   title: "Story One: Mike is a Cook",
   diff_lev: 1,
   text:
-  "Story One: Mike is a Cook
-
-Hi there.
+  "Hi there.
 
 These are stories that I want you to listen to.
 
@@ -162,8 +160,7 @@ Lesson.create(
   language_id: english.id,
   title: "Story Two: Dustin Wants to Take a Vacation",
   diff_lev: 1,
-  text: "
-Now let's listen to the story of Dustin, who is excited about his winter holiday.
+  text: "Now let's listen to the story of Dustin, who is excited about his winter holiday.
 
 A) Dustin is excited for the winter holiday.
 
@@ -237,10 +234,7 @@ Lesson.create(
   language_id: english.id,
   title: "Story Three: Karen Gets a Cat",
   diff_lev: 1,
-  text:"
-Story number three.
-
-A) Karen is bored at work and at home.
+  text:"A) Karen is bored at work and at home.
 
 She does the same thing every day.
 
@@ -311,8 +305,6 @@ Lesson.create(
   title: "Story Four: My Daughter is a Good Student",
   diff_lev: 1,
   text:"
-  Story number four.
-
 A) My daughter goes to school every day.
 
 She likes school very much.
