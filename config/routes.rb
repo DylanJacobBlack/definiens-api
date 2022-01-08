@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :sessions, only: %i[create destroy]
     end
   end
-  post "/login", to: "sessions#login"
-  post "/signup", to: "sessions#signup"
+  resources :users, param: :_username
+  post '/auth/login', to: 'authentication#login'
+  get '/*a', to: 'application#not_found'
 end
