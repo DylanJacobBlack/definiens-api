@@ -13,6 +13,7 @@ puts "Clearing db..."
 
 puts "Creating users..."
 admin = User.create(
+  username: "admin",
   email: "system@admin.com",
   password: "something"
 )
