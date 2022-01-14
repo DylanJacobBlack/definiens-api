@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   end
   resources :users, param: :_username
   post '/auth/login', to: 'authentication#login'
+  post '/word', to: 'definition#lookup'
   get '/*a', to: 'application#not_found'
 end
