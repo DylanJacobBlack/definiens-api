@@ -34,3 +34,6 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# Ignore google translate API credentials
+glossy-motif-334504-ee91c048ab7c.json
