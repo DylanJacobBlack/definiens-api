@@ -11,11 +11,13 @@ class Api::V1::LessonsController < Api::V1::BaseController
   end
 
   def create
+    puts params
     @lesson = Lesson.create(lesson_params)
     @lesson.nil? ? :not_found : :created
   end
 
   def lesson_params
-    params.require(:lesson).permit(:title, :text, :language_id, :user_id)
+    # puts lesson_params
+    params.require(:lesson).permit(:title, :text, :picture, :language_id, :user_id)
   end
 end
