@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.3'
 
+# Use to store images and other media files
+gem 'cloudinary', '~> 1.16.0'
 # Use to translate text from one language into another
 gem 'google-cloud-translate', '~> 3.2', '>= 3.2.2'
 # Use Json Web Token (JWT) for token based authentication
