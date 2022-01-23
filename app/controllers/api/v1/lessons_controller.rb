@@ -13,6 +13,7 @@ class Api::V1::LessonsController < Api::V1::BaseController
   def create
     puts params
     @lesson = Lesson.create(lesson_params)
+    @lesson.url = @lesson.get_url
     @lesson.nil? ? :not_found : :created
   end
 

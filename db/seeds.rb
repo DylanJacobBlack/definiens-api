@@ -1,3 +1,5 @@
+require "open-uri"
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 #
@@ -11,7 +13,7 @@ puts "Clearing db..."
 # User.destroy_all
 # Language.destroy_all
 
-puts "Creating users..."
+puts "Creating admin..."
 admin = User.create(
   username: "admin",
   email: "system@admin.com",
@@ -20,12 +22,15 @@ admin = User.create(
 
 puts "Creating languages..."
 english = Language.create(
-  name: "English"
+  name: "english"
+)
+spanish = Language.create(
+  name: "spanish"
 )
 
 puts "Creating lessons..."
 
-Lesson.create(
+lesson1 = Lesson.create(
   user_id: admin.id,
   language_id: english.id,
   title: "Twenty Thousand Leagues Under the Sea, Chapter One",
@@ -109,6 +114,9 @@ The engineers then proceeded to inspect the Scotia , which had been put in dry d
 Indeed, from this moment on, any maritime casualty without an established cause was charged to the monster's account.
 
 This outrageous animal had to shoulder responsibility for all derelict vessels, whose numbers are unfortunately considerable, since out of those 3,000 ships whose losses are recorded annually at the marine insurance bureau, the figure for steam or sailing ships supposedly lost with all hands, in the absence of any news, amounts to at least 200! Now then, justly or unjustly, it was the \"monster\" who stood accused of their disappearance; and since, thanks to it, travel between the various continents had become more and more dangerous, the public spoke up and demanded straight out that, at all cost, the seas be purged of this fearsome cetacean.")
+
+file = URI.open('https://images-na.ssl-images-amazon.com/images/I/71zc4dyOnAL.jpg')
+lesson1.picture.attach(io: file, filename: '1000leagues.jpg', content_type: 'image/jpg')
 
 Lesson.create(
   user_id: admin.id,
