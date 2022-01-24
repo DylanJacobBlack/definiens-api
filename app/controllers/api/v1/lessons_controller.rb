@@ -12,15 +12,11 @@ class Api::V1::LessonsController < Api::V1::BaseController
 
   def create
     picture = Cloudinary::Uploader.upload(params[:lesson][:picture])
-    puts picture['url']
     @lessson = Lesson.create(title: params[:lesson][:title], text: params[:lesson][:text], language_id: params[:lesson][:language_id], user_id: params[:lesson][:user_id], url: picture['url'])
-
-    puts @lesson
     @lesson.nil? ? :not_found : :created
   end
 
   def lesson_params
-    # puts lesson_params
     params.require(:lesson).permit(:title, :text, :language_id, :user_id, :url)
   end
 end
