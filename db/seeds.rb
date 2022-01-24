@@ -35,6 +35,7 @@ lesson1 = Lesson.create(
   language_id: english.id,
   title: "Twenty Thousand Leagues Under the Sea, Chapter One",
   diff_lev: 5,
+  url: "https://res.cloudinary.com/dqlx6iqqt/image/upload/v1642996832/33507_iqddhk.jpg",
   text: "THE YEAR 1866 was marked by a bizarre development, an unexplained and downright inexplicable phenomenon that surely no one has forgotten.
 
 Without getting into those rumors that upset civilians in the seaports and deranged the public mind even far inland, it must be said that professional seamen were especially alarmed. Traders, shipowners, captains of vessels, skippers, and master mariners from Europe and America, naval officers from every country, and at their heels the various national governments on these two continents, were all extremely disturbed by the business.
@@ -71,9 +72,7 @@ During this memorable campaign, journalists making a profession of science battl
 
 With inexhaustible zest, the popular press took potshots at feature articles from the Geographic Institute of Brazil, the Royal Academy of Science in Berlin, the British Association, the Smithsonian Institution in Washington, D.C., at discussions in The Indian Archipelago, in Cosmos published by Father Moigno, in Petermann's Mittheilungen ,* and at scientific chronicles in the great French and foreign newspapers.
 
-When the monster's detractors cited a saying by the botanist Linnaeus that \"nature doesn't make leaps,\" witty writers in the popular periodicals parodied it, maintaining in essence that \"nature doesn't make lunatics,\" and ordering their contemporaries never to give the lie to nature by believing in krakens, sea serpents, \"Moby Dicks,\" and other all–out efforts from drunken seamen. Finally, in a much–feared satirical journal, an article by its most popular columnist finished off the monster for good, spurning it in the style of Hippolytus repulsing the amorous advances of his stepmother Phædra, and giving the creature its quietus amid a universal burst of laughter. Wit had defeated science. *German: \"Bulletin.
-
-Ed.
+When the monster's detractors cited a saying by the botanist Linnaeus that \"nature doesn't make leaps,\" witty writers in the popular periodicals parodied it, maintaining in essence that \"nature doesn't make lunatics,\" and ordering their contemporaries never to give the lie to nature by believing in krakens, sea serpents, \"Moby Dicks,\" and other all–out efforts from drunken seamen. Finally, in a much–feared satirical journal, an article by its most popular columnist finished off the monster for good, spurning it in the style of Hippolytus repulsing the amorous advances of his stepmother Phædra, and giving the creature its quietus amid a universal burst of laughter. Wit had defeated science. *German: \"Bulletin. Ed.
 
 During the first months of the year 1867, the question seemed to be buried, and it didn't seem due for resurrection, when new facts were brought to the public's attention.
 
@@ -115,14 +114,12 @@ Indeed, from this moment on, any maritime casualty without an established cause 
 
 This outrageous animal had to shoulder responsibility for all derelict vessels, whose numbers are unfortunately considerable, since out of those 3,000 ships whose losses are recorded annually at the marine insurance bureau, the figure for steam or sailing ships supposedly lost with all hands, in the absence of any news, amounts to at least 200! Now then, justly or unjustly, it was the \"monster\" who stood accused of their disappearance; and since, thanks to it, travel between the various continents had become more and more dangerous, the public spoke up and demanded straight out that, at all cost, the seas be purged of this fearsome cetacean.")
 
-file = URI.open('https://images-na.ssl-images-amazon.com/images/I/71zc4dyOnAL.jpg')
-lesson1.picture.attach(io: file, filename: '1000leagues.jpg', content_type: 'image/jpg')
-
 Lesson.create(
   user_id: admin.id,
   language_id: english.id,
   title: "Story One: Mike is a Cook",
   diff_lev: 1,
+  url: "https://res.cloudinary.com/dqlx6iqqt/image/upload/v1642979081/chef_enitya.jpg",
   text:
   "Hi there.
 
@@ -254,6 +251,7 @@ Lesson.create(
   language_id: english.id,
   title: "Story Two: Dustin Wants to Take a Vacation",
   diff_lev: 1,
+  url: "https://res.cloudinary.com/dqlx6iqqt/image/upload/v1642979492/Beach_20Vacation_20Packing_20List-2021_GettyImages-1030311160_yq8aaw.jpg",
   text: "Now let's listen to the story of Dustin, who is excited about his winter holiday.
 
 A) Dustin is excited for the winter holiday.
@@ -328,6 +326,7 @@ Lesson.create(
   language_id: english.id,
   title: "Story Three: Karen Gets a Cat",
   diff_lev: 1,
+  url: "https://res.cloudinary.com/dqlx6iqqt/image/upload/v1642979624/cat_hwayva.jpg",
   text:"A) Karen is bored at work and at home.
 
 She does the same thing every day.
@@ -398,6 +397,7 @@ Lesson.create(
   language_id: english.id,
   title: "Story Four: My Daughter is a Good Student",
   diff_lev: 1,
+  url: "https://res.cloudinary.com/dqlx6iqqt/image/upload/v1642979790/100602603_bibkhu.jpg",
   text:"
 A) My daughter goes to school every day.
 
@@ -471,6 +471,7 @@ Lesson.create(
   language_id: english.id,
   title: "Canadian English: Chapter II, Part 1",
   diff_lev: 4,
+  url: "https://res.cloudinary.com/dqlx6iqqt/image/upload/v1642979872/yiylevm1kp1ip5iebhsj.jpg",
   text: "The first Canadians were the native Indians who came from Asia over 10,000 years ago.
 
 They were fishers, hunters and farmers. They developed different cultures in different areas. In Central America these people developed one of the most famous independent centres of world civilization, with science, writing and advanced construction techniques. Scientists now believe there were different waves of settlement from Asia which spread out over the American continent. That is why there are different language groups in different areas. There may have been other visitors to North America over the centuries but we do not know for sure.
