@@ -30,13 +30,12 @@ spanish = Language.create(
 
 puts "Creating lessons..."
 
-picture1 = Cloudinary::Uploader.upload('public/underthesea.jpg')
-lesson1 = Lesson.create(
+Lesson.create(
   user_id: admin.id,
   language_id: english.id,
   title: "Twenty Thousand Leagues Under the Sea, Chapter One",
   diff_lev: 5,
-  url: picture1['url'],
+  url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062313/wiuymbx6zmwe3daelhqh.jpg",
   text: "THE YEAR 1866 was marked by a bizarre development, an unexplained and downright inexplicable phenomenon that surely no one has forgotten.
 
 Without getting into those rumors that upset civilians in the seaports and deranged the public mind even far inland, it must be said that professional seamen were especially alarmed. Traders, shipowners, captains of vessels, skippers, and master mariners from Europe and America, naval officers from every country, and at their heels the various national governments on these two continents, were all extremely disturbed by the business.
@@ -115,13 +114,12 @@ Indeed, from this moment on, any maritime casualty without an established cause 
 
 This outrageous animal had to shoulder responsibility for all derelict vessels, whose numbers are unfortunately considerable, since out of those 3,000 ships whose losses are recorded annually at the marine insurance bureau, the figure for steam or sailing ships supposedly lost with all hands, in the absence of any news, amounts to at least 200! Now then, justly or unjustly, it was the \"monster\" who stood accused of their disappearance; and since, thanks to it, travel between the various continents had become more and more dangerous, the public spoke up and demanded straight out that, at all cost, the seas be purged of this fearsome cetacean.")
 
-picture2 = Cloudinary::Uploader.upload('public/cook.jpeg')
 Lesson.create(
   user_id: admin.id,
   language_id: english.id,
   title: "Story One: Mike is a Cook",
   diff_lev: 1,
-  url: picture2['url'],
+  url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062314/aayytmberomuxeahhmwa.jpg",
   text:
   "Hi there.
 
@@ -248,13 +246,12 @@ I invite you to listen to the next story.
 Bye for now."
 )
 
-picture3 = Cloudinary::Uploader.upload('public/vacation.jpg')
 Lesson.create(
   user_id: admin.id,
   language_id: english.id,
   title: "Story Two: Dustin Wants to Take a Vacation",
   diff_lev: 1,
-  url: picture3['url'],
+  url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062314/rlqiclhlm6kromabpcxg.jpg",
   text: "Now let's listen to the story of Dustin, who is excited about his winter holiday.
 
 A) Dustin is excited for the winter holiday.
@@ -324,13 +321,12 @@ Eight: Dustin decides to study French, save money, or stay home for the vacation
 And there you have it, the story of Dustin who wanted to go on vacation. Thank you for listening, and we'll look forward to the next story."
 )
 
-picture4 = Cloudinary::Uploader.upload('public/cat.jpeg')
 Lesson.create(
   user_id: admin.id,
   language_id: english.id,
   title: "Story Three: Karen Gets a Cat",
   diff_lev: 1,
-  url: picture4['url'],
+  url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062315/xxlx3phn1y5b7ovosmwj.jpghttps://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062314/rlqiclhlm6kromabpcxg.jpg",
   text:"A) Karen is bored at work and at home.
 
 She does the same thing every day.
@@ -396,13 +392,12 @@ Seven: Karen buys the cat from the pet store. Does Karen buy the cat? Yes, Karen
 Eight: Karen is now very happy because she has a cat. Is Karen bored now? No, Karen is not bored. She is now very happy because she has a cat."
 )
 
-picture5 = Cloudinary::Uploader.upload('public/goodstudent.jpeg')
 Lesson.create(
   user_id: admin.id,
   language_id: english.id,
   title: "Story Four: My Daughter is a Good Student",
   diff_lev: 1,
-  url: picture5['url'],
+  url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062315/td2isholdxq0bigrrgrf.jpg",
   text:"
 A) My daughter goes to school every day.
 
@@ -467,16 +462,12 @@ No, she likes math and science.
 Seven: The daughter and Amy do well in school. Does the daughter do well in school? Yes, the daughter and Amy do well in school."
 )
 
-
-
-
-picture6 = Cloudinary::Uploader.upload('public/cree.jpg')
 Lesson.create(
   user_id: admin.id,
   language_id: english.id,
   title: "Canadian English: Chapter II, Part 1",
   diff_lev: 4,
-  url: picture6['url'],
+  url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062315/vek75y2wo3paukyjeghz.jpg",
   text: "The first Canadians were the native Indians who came from Asia over 10,000 years ago.
 
 They were fishers, hunters and farmers. They developed different cultures in different areas. In Central America these people developed one of the most famous independent centres of world civilization, with science, writing and advanced construction techniques. Scientists now believe there were different waves of settlement from Asia which spread out over the American continent. That is why there are different language groups in different areas. There may have been other visitors to North America over the centuries but we do not know for sure.
