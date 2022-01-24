@@ -30,7 +30,7 @@ spanish = Language.create(
 
 puts "Creating lessons..."
 
-picture1 = Cloudinary::Uploader.upload(asset_path('/underthesea.jpg'))
+picture1 = Cloudinary::Uploader.upload('/underthesea.jpg')
 lesson1 = Lesson.create(
   user_id: admin.id,
   language_id: english.id,
@@ -115,7 +115,7 @@ Indeed, from this moment on, any maritime casualty without an established cause 
 
 This outrageous animal had to shoulder responsibility for all derelict vessels, whose numbers are unfortunately considerable, since out of those 3,000 ships whose losses are recorded annually at the marine insurance bureau, the figure for steam or sailing ships supposedly lost with all hands, in the absence of any news, amounts to at least 200! Now then, justly or unjustly, it was the \"monster\" who stood accused of their disappearance; and since, thanks to it, travel between the various continents had become more and more dangerous, the public spoke up and demanded straight out that, at all cost, the seas be purged of this fearsome cetacean.")
 
-picture2 = Cloudinary::Uploader.upload(asset_path('/cook.jpg'))
+picture2 = Cloudinary::Uploader.upload('/cook.jpg')
 Lesson.create(
   user_id: admin.id,
   language_id: english.id,
@@ -248,7 +248,7 @@ I invite you to listen to the next story.
 Bye for now."
 )
 
-picture3 = Cloudinary::Uploader.upload(asset_path('/underthesea.jpg'))
+picture3 = Cloudinary::Uploader.upload('/underthesea.jpg')
 Lesson.create(
   user_id: admin.id,
   language_id: english.id,
@@ -324,7 +324,7 @@ Eight: Dustin decides to study French, save money, or stay home for the vacation
 And there you have it, the story of Dustin who wanted to go on vacation. Thank you for listening, and we'll look forward to the next story."
 )
 
-picture4 = Cloudinary::Uploader.upload(asset_path('/cat.jpg'))
+picture4 = Cloudinary::Uploader.upload('/cat.jpg')
 Lesson.create(
   user_id: admin.id,
   language_id: english.id,
@@ -396,7 +396,7 @@ Seven: Karen buys the cat from the pet store. Does Karen buy the cat? Yes, Karen
 Eight: Karen is now very happy because she has a cat. Is Karen bored now? No, Karen is not bored. She is now very happy because she has a cat."
 )
 
-picture5 = Cloudinary::Uploader.upload(asset_path('/goodstudent.jpg'))
+picture5 = Cloudinary::Uploader.upload('/goodstudent.jpg')
 Lesson.create(
   user_id: admin.id,
   language_id: english.id,
@@ -470,7 +470,7 @@ Seven: The daughter and Amy do well in school. Does the daughter do well in scho
 
 
 
-picture6 = Cloudinary::Uploader.upload(asset_path('/cree.jpg'))
+picture6 = Cloudinary::Uploader.upload('/cree.jpg')
 Lesson.create(
   user_id: admin.id,
   language_id: english.id,
