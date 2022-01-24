@@ -330,7 +330,7 @@ Lesson.create(
   language_id: english.id,
   title: "Story Three: Karen Gets a Cat",
   diff_lev: 1,
-  url: picture4]['url'],
+  url: picture4['url'],
   text:"A) Karen is bored at work and at home.
 
 She does the same thing every day.
