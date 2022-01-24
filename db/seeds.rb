@@ -324,7 +324,7 @@ Eight: Dustin decides to study French, save money, or stay home for the vacation
 And there you have it, the story of Dustin who wanted to go on vacation. Thank you for listening, and we'll look forward to the next story."
 )
 
-picture4 = Cloudinary::Uploader.upload('public/cat.jpg')
+picture4 = Cloudinary::Uploader.upload('public/cat.jpeg')
 Lesson.create(
   user_id: admin.id,
   language_id: english.id,
