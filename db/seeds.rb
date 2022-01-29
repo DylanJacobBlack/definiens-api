@@ -479,3 +479,97 @@ Wars between European powers like France, England, Spain and Holland affected de
 In 1776 the American War of Independence took place. A new nation was created. The United States. Many people living in the new United States wanted to remain a part of the British Empire. Many tens of thousands of people moved north to Canada. These were the United Empire Loyalists. This was the first large scale movement of English speaking people into Canada. These people were really Americans and they determined how Canadians would speak English.
 
 These people wanted to remain loyal to the King of England. During the 19th century there was major immigration from Great Britain to Canada. Much of this immigration was from Scotland and Northern Ireland. As a result Canada was very closely attached to the British Empire.")
+
+
+Lesson.create(
+  user_id: admin.id,
+  language_id: spanish.id,
+  title: " ¿Conoces a ese chico?",
+  diff_lev: 1,
+  url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643442628/Elegant-Big-sombrero-hat-Hat-Large-Brim-Fedoras-Wool-Felt-Hat-Women-Bow-Panama-Cap-Australian.jpg_640x640_c2cvn7.jpg",
+  text:
+"A: ¿Conoces a ese chico de los pantalones amarillos?
+
+B: No, no sé quién es.
+
+A: ¿Y a la chica del sombrero azul?
+
+B: Sí, esa es una vecina.
+
+A: ¿Cómo se llama?
+
+B: No lo sé.
+
+Es de mi edificio, pero no sé cómo se llama. ¿Por qué lo preguntas?
+
+A: Nada, por curiosidad.")
+
+Lesson.create(
+  user_id: admin.id,
+  language_id: spanish.id,
+  title: "Hay almas que tienen",
+  diff_lev: 3,
+  url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643442855/1642496508_5d377f2c_jkb9xy.jpg",
+  text:
+"Hay almas que tienen
+
+Hay almas que tienen azules luceros, mañanas marchitas entre hojas del tiempo, y castos rincones que guardan un viejo rumor de nostalgias y sueños.
+
+Otras almas tienen dolientes espectros de pasiones. Frutas con gusanos. Ecos de una voz quemada que viene de lejos como una corriente de sombra. Recuerdos vacíos de llanto y migajas de besos. Mi alma está madura hace mucho tiempo, y se desmorona turbia de misterio. Piedras juveniles roídas de ensueño caen sobre las aguas de mis pensamientos.
+
+Cada piedra dice: \"¡Dios está muy lejos! \"")
+
+Lesson.create(
+  user_id: admin.id,
+  language_id: spanish.id,
+  title: "Historia de la célebre Reina de España Doña Juana",
+  diff_lev: 6,
+  url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643443412/1642497003_a094e69d_xgdl5t.jpg",
+  text:
+"Historia de la célebre Reina de España Doña Juana, llamada vulgarmente, La Loca, by Anonymous
+
+CAPITULO PRIMERO.
+
+De cuáles fueron los padres de Doña Juana la Loca, y las cosas que pasaban en su palacio.
+
+Don Fernando y doña Isabel, célebres y nunca bien ponderados reyes católicos, ocupaban los tronos de Aragon y Castilla, dando un ejemplo de moralidad y sabiduría á toda su córte, y siendo estimados altamente, no solo por la aristocrácia de su época, sino tambien por todos sus súbditos.
+
+Muy agradecidos los régios esposos á las muestras de cariño que estos continuamente les prodigaban, no podian menos de espresarles su reconocimiento de una manera mas loable, porque estos monarcas no se desdoraban de que cualquier vasallo hiciese parar su carruaje, aun en los sitios mas públicos y concurridos, para prestar atencion á lo que les quisiesen manifestar. No obstante de esto, siempre se ha conocido, segun los historiadores, el no faltar nunca entre los palaciegos aquellas comunes discordias y hablillas, hijas de la envidia. Ninguna prueba que caracterice mas esta verdad, que la de que hallándose ya en cinta la reina Isabel la Católica, comenzasen á propalar varios personajes, entre los cuales se hallaba D. Enrique de Villena, que la sucesion que esperaban no podia menos de ser bastarda; y esto lo deducian de las varias escenas que habian presenciado en palacio.
+
+Mas sin embargo de ser D. Fernando tan previsor, y de inspeccionar tanto las cosas que le eran anejas, parece que estas voces las tomó por vagas, y no se cuidó de ellas; asi es, que dichos personajes atribuian la indolencia de D. Fernando en este punto, al miedo ó al escesivo amor que profesaba á Doña Isabel, la cual unia á los vínculos de esposa, el ser nieta de su hermano.
+
+Miras particulares se llevaban el de Villena y otros en difundir por el vulgo tales voces, pero miras que mas tarde fueron descubiertas por los que mas le vendian amistad, declarando al soberano verbalmente los proyectos concebidos por ellos, y mostrándole por escrito la correspondencia que habian interceptado dirigida á D. Juan de Portugal, á la cual contestó inmediatamente D. Fernando por medio de su enviado de negocios, Lope de Alburquerque. No habiendo querido Don Juan de Portugal dar audiencia al enviado de Castilla, y habiéndolo llegado á saber muy pronto D. Fernando, montó en cólera de tal suerte, que nadie se atrevia á dirigirle una palabra.
+
+Procuraban aplacarle en algunos momentos de furia, pero todo era en vano; amenazaba que haria entender á sus contrarios lo que merece el que agravia al monarca de Castilla, y que mostraria cuán grandes eran sus fuerzas contra los que le enojaban. Tampoco fueron bastantes á aplacar su ira los ruegos de su hermano D. Pedro de Acuña, conde de Buendia, quien le protestaba no se irritase tan terriblemente, que tal vez una fraguada noticia, como podia ser, fuera el motivo del ludibrio y las imprecaciones que dirigia sin distincion de parientes y amigos. Solo á las amonestaciones de un personage que por respeto se calla, era á las que daba cabida el rey D. Fernando.
+
+Este personaje se supo grangear su cariño por su bella cualidad, que era la de todo adulador, logrando con sus palabras henchir el pecho del monarca cada dia de mayor pasion. Aun la misma reina Isabel tuvo en muchas ocasiones que valerse de este favorito para hablar con su real esposo.
+
+Estos sucesos ocurrian en el palacio de la imperial Toledo, cuando dió á luz la reina Isabel, el 6 de noviembre de 1479, á la princesa Doña Juana de Castilla, muy parecida á su abuela Doña Juana, esposa de D. Juan III de Aragon, segun afirma el autor de _las Reinas Católicas_.
+
+El nombre de Doña Juana es el de uno de los monarcas que por mas largo tiempo han figurado en España al frente de los documentos y órdenes reales, y no obstante se puede afirmar que en pocas ocasiones, ó mejor dicho en ninguna, tuvo parte la aficion á los trabajos que le proporcionaba su elevada gerarquia. Esta especie de hastío al destino árduo que debia ejercer á la edad que requieren las leyes, se le iba aumentando con los años; por el contrario, cualquier faena á que la dedicasen de las propias de su sexo, la abrazaba con el mas indecible júbilo; asi es que, todavia de corta edad, era la admiracion de cuantos la oian y observaban sus entretenimientos.
+
+A esto se puede añadir que su nombre no era mas que una mera forma para dar á conocer que la heredera del trono de Castilla existia.
+
+Cuando pocos años despues su hijo el célebre Cárlos V tomó las riendas del gobierno de España, por la habitual imposibilidad de su madre, observó el mismo método, ora porque asi lo dispusieron en varios Estamentos del reino, ora porque ella era la soberana en realidad y ora por respeto y atencion, como lo hizo conocer al renunciar los estados en su hijo Felipe, al cual pedia encarecidamente hiciese conservar ileso el nombre de su desventurada abuela al frente de los negocios públicos, para no causarla descontento.
+
+Cincuenta años conservó esta soberana el título de reina de España, á pesar de no haber gobernado ni un solo dia; tal era la enagenacion mental de que se hallaba poseida causada por los poderosos y bien fundados motivos que mas adelante se irán conociendo.
+
+El memorable D. Francisco Jimenez de Cisneros y el rey Don Fernando, ordenaron, como gobernadores durante la menor edad de Cárlos V, no se hiciese pública la insuficiencia de Doña Juana, á pesar de estar íntimamente convencidos de su incapacidad; de manera que por muchos y reiterados esfuerzos que hicieron algunos para declarar su nulidad, no lo lograron; y eso que para nada les estorbaba, pues que jamás se resintió de que no contasen con su voluntad para ninguno de los actos de gobierno.
+
+Su razon se encontraba sumamente turbada por los impulsos de una lícita y vehemente pasion: por esta causa fue su vida cruel la de un reo aprisionado; y si alguna vez pareció resentirse de su precaria suerte, era para en seguida fomentarla ella misma con los padecimientos de su imaginacion ardiente, creyéndose que tal vez cometeria un desacato contra el objeto de sus mas tiernas adoraciones.
+
+Hé aqui el motivo por qué un nombre de suyo tan esclarecido, apenas ha figurado bajo, el concepto político, en el catálogo inmenso de los soberanos españoles; y por consecuencia es enteramente nulo.
+
+Mas no obstante de todo, fue reina de esta magnánima y poderosa nacion, hija de los grandes reyes católicos D. Fernando y Doña Isabel, y madre del noble y valiente emperador Cárlos V; de suerte que los pormenores de su vida privada, los motivos por qué le sobrevino su demencia, y el fundamento con que se la llama la Loca, no pueden menos de escitar la curiosidad, y con doble causa, porque puede uno mirarse en esta soberana, como en el triste espejo de los funestos resultados que las violentas pasiones llevadas al estremo tienen, siempre que no se modifican y reprimen con la razon.
+
+Dotada Doña Juana de un talento nada comun, de una viva y ardiente imaginacion, fue educada de una manera no vulgar para aquella época: y especialmente en la lengua greco-latina, hizo tan admirables adelantos, que la hablaba con una soltura encantadora. El sábio Luis Vives afirma que de cualquier materia que se le tratase en este idioma, contestaba repentinamente como si fuera en castellano. A estas cualidades unia la de una figura esbelta y de mucho interés; era el tipo de la hermosura, colmada de gracia y dignidad: sus grandes ojos, espresivos y rasgados, denotaban el raro talento y energia de su alma, á lo que acompañaban los dignos y elegantes modales de la córte de Isabel, dechado de virtudes y moralidad.
+
+Todas estas grandes circunstancias, reunidas con el poderío de sus padres, hacian de Doña Juana uno de esos partidos mas aventajados para cualquier jóven príncipe de Europa. Estas mismas circunstancias la constituian en una infanta acreedora á ser idolatrada, aun por los que no tuviera el placer y el honor de admirarla. Prueba evidente, que no tardaron mucho tiempo algunos príncipes en ver cuál era el que podia ser dueño de joya de tan inestimable valor.
+
+D. Fernando y Doña Isabel no quisieron tampoco prolongar su casamiento, asi es que contando apenas quince años, esto es, en 1494, ajustaron las deseadas bodas con D. Felipe, archiduque de Austria, duque de Flandes, de Artois y del Tirol, é hijo del emperador de Alemania, Maximiliano I. Ajustadas que fueron, al instante se dió principio á los preparativos de marcha con el boato y solemnidad dignos de la hija de tan poderosos señores. Una armada de ciento veinte navíos de alto bordo se aprestó en el puerto de Laredo, embarcándose en ella quince mil hombres de guerra no incluyendo la tripulacion.
+
+A Don Alonso Enriquez, gran almirante de Castilla, estaba encomendado el mando de esta flota: iba de capellan mayor D. Diego de Villaescusa, dean de Jaen; y la encargada por el rey de servir y hallarse á las inmediatas órdenes de la infanta, era Doña Teresa de Velasco, esposa del admirante que dirigia aquella espedicion. La cámara y todos los destinos pertencientes á su persona, se servian por damas y caballeros de la primera nobleza de España; asi lo dice en las listas que de ellos forma D. Lorenzo de Padilla. Inútil es hacer mencion de las ropas y alhajas que habian de adornar á tan augusta princesa: se puede decir para abreviar que se habian dispuesto con elegancia y profusion.
+
+Terminados los preparativos, se dirigió toda la real familia por Almazan al puerto de Laredo, para despedir á tan escelsa infanta, escepto el rey D. Fernando que por hallarse celebrando de Córtes en Aragon, no pudo verificarlo, muy á pesar suyo. El malogrado príncipe D. Juan, hermano de Doña Juana, y su augusta madre la acompañaron hasta la entrada del navío, donde anegados en un mar de lágrimas, se dieron mútuamente el mas tierno y afectuoso á Dios. A Dios, que resonó por todos los ángulos de la embarcacion, en señal de reconocimiento á las reales personas que quedaban en tierra. El dia 19 de agosto de 1496 se hicieron á la vela con direccion á los Estados flamencos.
+
+Ningun contratiempo se habia notado, ninguna cosa que hubiera venido á turbar la tranquilidad de la ilustre viajera habia acurrido, hasta tocar en las costas de Flandes, en donde se levantó un temporal tan borrascoso, que se vieron precisados á guarecerse en el primer punto de salvacion que encontraron. Grande era la afliccion de Doña Juana al ver en tan inminente peligro su vida, pero Dios quiso pudiesen arribar en el puerto de Toorlan, en Inglaterra, despues de haber caminado por término de mas de dos horas, luchando con los embravecidos oleajes que un momento mas los hubiera sumergido en lo profundo de los mares. Permanecieron en esta poblacion siete dias, durante los cuales fue la infanta muy obsequiada por las damas y caballeros principales de aquel pais, que acudieron presurosos á besar su mano y juntamente á ofrecerla sus servicios.")
