@@ -17,6 +17,6 @@ class Api::V1::LessonsController < Api::V1::BaseController
   end
 
   def lesson_params
-    params.require(:lesson).permit(:title, :text, :language_id, :user_id, :url)
+    params.require(:lesson).permit(:title, :text, :language_id, :user_id, :url, :diff_lev)
   end
 end
