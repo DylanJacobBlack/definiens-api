@@ -6,7 +6,7 @@ class DefinitionController < ApplicationController
     project_id: "glossy-motif-334504",
     credentials: "google-credentials.json")
 
-    translation = translate.translate params[:text], to: params[:language]
+    translation = translate.translate params[:text], to: "en"
 
     render json:  {translation: translation.text} #=> "Salve mundi!"
   end
