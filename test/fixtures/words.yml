@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  definition: MyText
+  known: MyString
+  lesson: one
+  user: one
+  language: one
+
+two:
+  definition: MyText
+  known: MyString
+  lesson: two
+  user: two
+  language: two
