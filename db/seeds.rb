@@ -20,10 +20,22 @@ admin = User.create(
 
 puts "Creating languages..."
 english = Language.create(
-  name: "english"
+  name: "en"
 )
 spanish = Language.create(
-  name: "spanish"
+  name: "es"
+)
+
+chinese = Language.create(
+  name: "zh"
+)
+
+french = Language.create(
+  name: "fr"
+)
+
+german = Language.create(
+  name: "de"
 )
 
 puts "Creating lessons..."
@@ -573,3 +585,222 @@ A Don Alonso Enriquez, gran almirante de Castilla, estaba encomendado el mando d
 Terminados los preparativos, se dirigió toda la real familia por Almazan al puerto de Laredo, para despedir á tan escelsa infanta, escepto el rey D. Fernando que por hallarse celebrando de Córtes en Aragon, no pudo verificarlo, muy á pesar suyo. El malogrado príncipe D. Juan, hermano de Doña Juana, y su augusta madre la acompañaron hasta la entrada del navío, donde anegados en un mar de lágrimas, se dieron mútuamente el mas tierno y afectuoso á Dios. A Dios, que resonó por todos los ángulos de la embarcacion, en señal de reconocimiento á las reales personas que quedaban en tierra. El dia 19 de agosto de 1496 se hicieron á la vela con direccion á los Estados flamencos.
 
 Ningun contratiempo se habia notado, ninguna cosa que hubiera venido á turbar la tranquilidad de la ilustre viajera habia acurrido, hasta tocar en las costas de Flandes, en donde se levantó un temporal tan borrascoso, que se vieron precisados á guarecerse en el primer punto de salvacion que encontraron. Grande era la afliccion de Doña Juana al ver en tan inminente peligro su vida, pero Dios quiso pudiesen arribar en el puerto de Toorlan, en Inglaterra, despues de haber caminado por término de mas de dos horas, luchando con los embravecidos oleajes que un momento mas los hubiera sumergido en lo profundo de los mares. Permanecieron en esta poblacion siete dias, durante los cuales fue la infanta muy obsequiada por las damas y caballeros principales de aquel pais, que acudieron presurosos á besar su mano y juntamente á ofrecerla sus servicios.")
+
+
+Lesson.create(
+  user_id: admin.id,
+  language_id: spanish.id,
+  title: "Levantarse",
+  diff_lev: 2,
+  url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643692818/1642151671_10719f51_z77128.jpg",
+  text:
+"Quizás la peor parte del día es cuando hay que levantarse.
+
+Despertarse es fácil, pero levantarse es otra cosa. Hay que hacer un esfuerzo para ponerse en pie. Lo mejor es no pensarlo y saltar de la cama.
+
+Para facilitar las cosas suelo utilizar dos despertadores, uno cerca de la cama y otro un poco más lejos.
+
+El primero suena 5 minutos antes que el segundo, así empiezo a despertarme poco a poco. Para el segundo tengo que ponerme en pie, andar dos metros y apagarlo.
+
+De lunes a viernes, la hora de levantarse para mí es a las 7:15, pero muchos días me despierto antes por los ruidos de la calle, en especial de los vehículos, o porque mis hijos hacen algún ruido si salen al baño por la noche.
+
+En ocasiones, si me despierto en mitad de la noche, por el motivo que sea, ya no puedo dormir otra vez, así que intento relajarme y, si no lo consigo, me levanto y me pongo a leer, a ver la televisión, a escuchar mi MP3 o a usar mi ordenador.
+
+Me gusta madrugar y no tengo muchos problemas para levantarme, pero a veces tengo que hacer un gran esfuerzo si durante la noche no he dormido al menos 5 horas.")
+
+
+Lesson.create(
+  user_id: admin.id,
+  language_id: spanish.id,
+  title: "La nota de español",
+  diff_lev: 3,
+  url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643693358/notas_u6nhuk.jpg",
+  text:
+"Hola, chicos, ¿qué tal? Bienvenidos a un nuevo episodio de Español con Juan, un podcast en español para aprender español.
+
+¿Qué tal? ¿Cómo va la semana?
+
+Yo bien, aunque esta semana ha sido un poco, como puedo decir, un poco estresante para mí. He tenido que trabajar mucho, tanto en la universidad, como aquí, en internet, en Español Con Juan.
+
+En mi trabajo en la universidad… bueno, no sé si lo sabéis, pero si no lo sabéis yo os lo digo ahora o, mejor dicho, os lo recuerdo, porque estoy seguro de que la mayoría ya lo sabéis, sí… yo soy, esto, yo soy profesor de español en una universidad de Londres y… bueno, esta semana no hemos tenido clases, bueno en realidad en estos meses no tenemos clases… no sé cómo funciona la universidad de vuestros países, pero aquí, donde yo trabajo, solo damos clase desde octubre hasta marzo, hasta final de marzo. Ahora, estos meses, de abril a junio hacemos exámenes, corregimos trabajos de los estudiantes, tenemos talleres prácticos, tutorías… en fin, hacemos otras muchas cosas, pero no damos clase.
+
+Y la verdad es que yo prefiero dar clase.
+
+A mí hacer exámenes no me gusta mucho. No me gusta nada, la verdad. Para mí, no sé, para mí no tiene mucho sentido examinarse de una lengua… no sé, yo veo a los estudiantes obsesionados con la nota, con sacar una buena nota…
+
+Veréis, no sé si seré capaz de explicarlo, pero una cosa es aprender español por placer, porque te gusta, porque te apetece, porque te interesa, porque estás enamorado del idioma y otra cosa bien distinta es aprender español para sacar una buena nota, para tener una buena nota en la carrera que estás estudiando.
+
+Si la motivación principal para aprender español es la nota, sacar una buena nota, entonces… ¿dónde está el placer de estudiar un idioma?
+
+Eso es lo que pasa en la universidad, en las escuelas, en el sistema educativo en general, ¿no? Se pierde el placer, las ganas de aprender, de aprender por aprender y lo único que queda es el interés de sacar una buena nota.
+
+Y yo entiendo a los chicos, ¿eh? Yo los entiendo.
+
+Os explico. Mis estudiantes de la universidad son gente muy joven. Tienen unos 18, 19 o 20 años, en general, más o menos. ¿Cuál es su preocupación? ¿Qué es lo que realmente les interesa? Pues, obviamente, sus estudios, hacer bien en sus estudios, sacar buenas notas…
+
+Los chicos que tengo en clase estudian español como una parte de sus carreras. Ellos no estudian español como carrera.
+
+Ellos estudian otras carreras. No sé, por ejemplo, tengo muchos estudiantes de economía, de matemáticas, de física, de historia, de historia del arte, de medicina, de arquitectura… en fin, de todo. Mis estudiantes estudian carreras diferentes en la universidad y, entre todas las asignaturas que estudian, estudian también un idioma, en este caso, español. O sea, estudian por ejemplo, economía y español o historia del arte y español… ¿entendéis? Entonces, para ellos, la nota en español cuenta mucho, cuenta muchísimo. Si ellos consiguen sacar una nota alta en español, la media, la media de sus carreras puede subir, puede subir mucho y, por tanto, en consecuencia, su máxima preocupación, su máximo interés es sacar una buena nota. Es normal. Yo lo entiendo.
+
+Ellos, cuando vienen a mis clases, sí, de acuerdo, quieren aprender español, les gustaría aprender español y en general se lo pasan bien, pero realmente, realmente lo que más les interesa es la nota, sacar una buena nota. El español, aprender español, es secundario.
+
+Y es normal, es normal que sea así porque, bueno, porque… porque la nota es muy importante. La nota al final de los estudios, la nota que sacan al final de los estudios es muy importante a la hora de encontrar trabajo, a la hora de encontrar un buen trabajo. Bueno, la cuestión de qué es realmente un buen trabajo la dejamos para otro día.
+
+Hoy no hablamos de ese tema, pero digamos que para la mayoría de ellos, para la mayoría de los chicos y chicas que estudian conmigo, un buen trabajo es simplemente un trabajo en el que se gana mucho dinero. Pero bueno, ese es otro tema, de qué es exactamente un buen trabajo hablaremos otro día.
+
+Pero, en fin, a lo que iba, es absolutamente normal que su máxima preocupación sea sacar una buena nota en la universidad, y por tanto en español, porque eso significa obtener un buen trabajo cuando terminen su licenciatura, cuando terminen la universidad.
+
+Y además hay que tener en cuenta que la universidad aquí en Reino Unido es muy cara, es carísima. No sé en vuestros países, pero aquí la universidad es supercara.
+
+Para los ingleses y para los ciudadanos europeos en general, creo que cuesta unas 9.000 libras al año. 9000 libras esterlinas al año, cada año. Eso es mucho dinero. Y eso solo la matricula. Aparte hay que pagar, claro, la vivienda, la comida, el transporte, los libros… en fin, y la vida en Londres. Londres es una de las ciudades más caras del mundo. Todo es muy caro. Entonces, claro, para ellos, para los estudiantes, es muy importante la nota de la universidad. Es una inversión. Para ellos, ir a la universidad es una inversión. Cuesta mucho dinero. Les cuesta mucho dinero, pero lo ven como una inversión para el futuro.
+
+Si al final consiguen un buen trabajo, si cuando se licencian consiguen un buen trabajo, el tiempo y el dinero empleado en la universidad habrá valido la pena.
+
+Pero, claro, eso hace que durante el tiempo que pasan en la universidad estén muy nerviosos, estresados y que su máxima preocupación sea, no tanto aprender, sino sacar una buena nota. Eso, creo que en general, no solo en español. Supongo que en todas las asignaturas será más o menos igual.
+
+No quiero decir que no tengan ganas de aprender.
+
+Por supuesto que tienen ganas de aprender, que son curiosos, que les gusta descubrir cosas nuevas, desarrollarse, aprender… los chicos tienen muchas ganas de aprender, lo que pasa es que el sistema, el sistema educativo, tal y como está montado, les empuja, les obliga, les fuerza a preocuparse sobre todo por las notas, por sacar unas buenas notas, no por aprender.
+
+Y esto me ha costado entenderlo, ¿eh? Sí, yo esto al principio no lo entendía. Yo, al principio, cuando empecé a trabajar en la universidad, pensaba que los estudiantes querían, principalmente, aprender español.
+
+Y por eso yo preparaba muchas actividades divertidas, juegos, hacíamos un montón de cosas interactivas, veíamos películas, en fin, yo intentaba que ellos aprendieran español y que se lo pasaran bien, pero poco a poco me he ido dando cuenta de que en realidad a ellos lo que realmente les interesa es el resultado final, sacar una buena nota y lo de aprender español es, en realidad, algo secundario. Triste, pero es así. Al final es así y yo no puedo hacer mucho para cambiarlo. Es el sistema. Funciona así. No sé si será así en todas las asignaturas. Sospecho que más o menos sí, que será más o menos igual en todas la asignaturas.
+
+Y es una pena que sea así, ¿no?
+
+Es una pena porque la universidad debería ser el lugar donde se motivara a la gente por aprender, donde se impulsara la creatividad, la curiosidad, el deseo de saber, el deseo de conocer y de aprender cosas nuevas. Y no, me parece que desgraciadamente no es así. Creo que la universidad se ha ido convirtiendo poco a poco en un entrenamiento para obtener un trabajo. Es como si se dijera a los estudiantes que para obtener un trabajo tienen que saltar una serie de obstáculos. Eso es. Las asignaturas de las carreras no son un incentivo para el estudio, para la curiosidad, para saber más… son más que nada una serie de obstáculos que los estudiantes tienen que sortear, que tienen que saltar, digamos. Como en las olimpiadas, ¿no? Habéis visto las carreras de obstáculos, ¿no?
+
+En algunas carreras, para llegar a la meta los corredores tienen que saltar una serie de obstáculos… pues en la universidad pasa algo parecido. Se ponen obstáculos que los estudiantes tienen que saltar si quieren llegar a la meta final, que, claro, es el puesto de trabajo, el puesto de trabajo tan deseado.
+
+Y la verdad es que no me gusta este sistema. No me gusta que el español sea un obstáculo en la carrera de estos chicos, de mis estudiantes de español.
+
+Como estaba diciendo, para mí, al principio, cuando empecé a enseñar español en la universidad, para mí, aprender español era algo maravilloso, algo que te abre puertas a otra cultura, que te puede cambiar la vida, que te hace conocer otras formas de vida, que te descubre un mundo nuevo, un mundo nuevo lleno de libros, de películas, de ciudades, de música… no sé. Para mí, aprender un idioma es algo tan maravilloso, algo que te ayuda para tu propio desarrollo personal. Algo que te cambia por dentro, que te cambia tu personalidad, la percepción que tienes del mundo. Y yo creía que el lugar ideal donde se podía enseñar español era la universidad, que en la universidad todo el mundo estaría deseando aprender por aprender, aprender simplemente por el placer de aprender…
+
+Pero me equivocaba. Vaya si me equivocaba. Todavía no me había dado cuenta de la importancia de los exámenes, de las notas, de las evaluaciones, del resultado final… Todavía no me había dado cuenta de que aquí lo que cuenta no es tanto aprender un idioma sino la nota en el examen de gramática o la nota de la prueba oral.
+
+Total que, bueno, lo que estaba diciendo al principio es que estas últimas semanas no estoy dando clase de español en la universidad, sino haciendo exámenes, corrigiendo trabajos de los estudiantes y… dando notas.
+
+Y cómo decía, lo que realmente me gusta es enseñar español, dar clase de español, pero dar notas y corregir exámenes realmente es lo que menos me interesa. Es quizás lo que me cansa más. Quizás porque no le veo mucho sentido.
+
+Echo de menos dar clase de español en una clase donde la máxima preocupación de los estudiantes sea aprender español, no la nota final.
+
+Y por eso me gusta tanto el trabajo que estoy haciendo en internet. Gracias a internet, gracias a los cursos que hago en Youtube, en Facebook, en nuestro blog… gracias a las redes sociales he llegado a conocer a gente de todo el mundo que está realmente interesada en aprender español. Y eso es un placer. Eso da mucha satisfacción. No tiene comparación. No se puede comparar.
+
+Es también mucho trabajo. Preparar los vídeos, los podcasts, escribir los libros, hacer los cursos online, publicar en facebook… lleva tiempo, lleva mucho tiempo y esfuerzo. No es fácil, es cansado, pero vale la pena. Para mí vale la pena.
+
+Da mucha satisfaccion ver que hay gente interesada en lo que tú haces en todo el mundo, en muchísimos países, que quieren aprender español, de verdad… Eso da mucha satisfacción. Como profesor, esa es la mayor satisfacción. Ver que hay gente a la que estoy ayudando, ver que hay gente que está aprendiendo español conmigo, que está mejorando su español y progresando, que están motivados por aprender español, que hacen preguntas, que quieren aprender..
+
+En fin, a lo que iba, que creo que ya me he vuelto a perder, como siempre. Que me gustaría enseñar más español y hacer menos evaluaciones y menos exámenes.
+
+Que creo que la escuela y la universidad dedica demasiado tiempo a hacer exámenes y a preparar a los estudiantes para el mercado laboral y que debería dedicar más esfuerzo a promover la curiosidad, las ganas de aprender, la creatividad, el placer de aprender por aprender.
+
+En fin, podría seguir hablando de este tema durante horas, pero no quiero aburriros con mis peroratas. ¿Sabéis qué es una perorata? Bueno, una perorata es un discurso muy largo y aburrido. Algo así como un rollo. Sí, una perorata es un discurso largo, muy extenso y aburrido.
+
+Bueno, pues basta de peroratas sobre el estado de la educación. Pero es que, claro, sí, dejadme que diga ya esto último para terminar.
+
+Es que si en general no me gustan los exámenes, en cualquier materia, en cualquier asignatura, en historia o física, por ejemplo, no me gustan los exámenes… pero es que en idiomas les veo muy poco sentido. No me parece que someter a los estudiantes de un idioma a exámenes de gramática, a exámenes orales, en fin, no me parece que ese sea el mejor modo de promover el estudio de un idioma.
+
+Me parece lo contrario, me parece que mucha gente acaba aborreciendo los idiomas porque se enseñan en este contexto de exámenes, notas… No me extraña, la verdad, no me extraña que haya tan poco interés por aprender idiomas, no me extraña que la mayoría de la gente pierda el interés por aprender idiomas… si han estudiado un idioma en la escuela o en la universidad, al final, cuando terminan, tienen asociado estudio de idiomas con exámenes de gramática, pruebas de vocabulario, estrés, nervios, memorización de listas de palabras… en fin, que no, que yo creo que el estudio de un idioma es otra cosa y que la universidad y la escuela deberían sobre todo promover el gusto de aprender por aprender.
+
+Bueno, esto creo que ya lo he dicho antes, ¿no?
+
+Me estoy repitiendo, estoy diciendo lo mismo varias veces, que es lo que ya me han dicho muchas veces que no tengo que hacer; que repito demasiado las cosas, que soy muy machacón… que machaco mucho las cosas, que las digo una y otra vez, una y otra vez… que me enrollo, que me enrollo mucho.
+
+¡Basta! Aquí lo dejo por hoy. No sé si estáis de acuerdo con mis reflexiones. Creo que hay algunos profesores de idiomas entre vosotros. Me gustaría saber qué pensáis sobre estas reflexiones. Si estáis de acuerdo conmigo o si pensáis que estoy equivocado. En fin, dejadme un comentario con vuestra opinión. Yo no tengo por qué tener razón necesariamente. Yo no me considero aquí el profesor que todo lo sabe, ¿de acuerdo?
+
+Yo simplemente expreso mis gustos, mis impresiones, lo que me pasa por la cabeza, pero, claro, yo puedo estar equivocado. A mí me gusta mucho comerme el coco con estos temas, pero nada más. No pretendo tener siempre razón. De hecho, creo que normalmente no tengo razón… pero ese es otro tema.
+
+En fin, que me gustaría conocer vuestro punto de vista. Y si no sois profesores de idiomas, pues también me gustaría saber qué pensáis porque como estudiantes de idiomas seguramente habéis estudiado español en la escuela o en la universidad. Contadme vuestra experiencia. Qué pensáis de lo que he dicho hoy.
+
+Y nada más por hoy. No me enrollo más. Creo que ya basta por hoy. Como decía al principio, esta semana he estado haciendo exámenes en la universidad y he terminado hecho polvo.
+
+Creo que necesito descansar un poco, salir a dar una vuelta. Hoy hace sol aquí en Londres y se está bien en la calle. Así que creo que voy a salir a dar un paseo por el parque.
+
+Os espero la próxima semana, ¿de acuerdo? Os espero la próxima semana aquí, en Español con Juan, un podcast en español para aprender español.")
+
+
+
+Lesson.create(
+  user_id: admin.id,
+  language_id: spanish.id,
+  title: "Ricitos de Oro - Goldilocks",
+  diff_lev: 2,
+  url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643693994/d821d1e907_SMJ6uJk_opzc5z.jpg",
+  text:
+"""Érase una vez que había tres osos: un Papá Oso, una Mamá Osa y un Bebé Oso. Ellos vivían juntos en una casa amarilla con un techo rojo en medio de un gran bosque.
+
+Un día, Mamá Osa cocinó un una gran olla de sopa deliciosa y caliente para el desayuno. Estaba muy caliente para comerla, así que los osos decidieron ir por un paseo mientras la sopa se enfriaba.
+
+Cerca del bosque vivía una pequeña niña llamada Ricitos de Oro.
+
+Ricitos de Oro era una niña pequeña y traviesa. En esa mañana, ella estaba jugando en el bosque, lanzando piedras a las ardillas, cuando olió la deliciosa sopa que Mamá Osa había hecho.
+
+\"¡Oh, estoy tan hambrienta!\" pensó Ricitos de Oro. \"Me pregunto si ellos compartirán su sopa conmigo.\"
+
+Ella tocó la puerta de la casa y miró a través de la ventana. Ella vio tres tazones de sopa sobre la mesa de la cocina — pero nadie parecía estar en casa. Entonces Ricitos de Oro entró. (¡Oh, ella era una niña pequeña y traviesa!)
+
+Primero, Ricitos de Oro probó la sopa en el tazón de Papá Oso. \"¡Ay! ¡Esta sopa está muy caliente!\", dijo ella.
+
+Entonces, Ricitos de Oro probó la sopa en el tazón de Mamá Osa. \"¡Puaj! ¡Esta sopa está muy fría! \", dijo ella.
+
+Finalmente, Ricitos de Oro probó la sopa en el tazón de Bebé Oso. \"¡Mmm, esta sopa es perfecta! \", dijo ella; y se comió el tazón entero de sopa.
+
+Con el estómago lleno y satisfecho, Ricitos de Oro buscó algún lugar para sentarse. Ella vio tres sillas junto a la chimenea. Primero, ella se sentó en la silla de Papá Oso. \"¡Esta silla es muy dura!\", se quejó ella.
+
+Luego, ella se sentó en la silla de Mamá Osa. \"¡Esta silla es muy suave!\", se quejó ella.
+
+Finalmente, ella se sentó en la silla de Bebé Oso. \¡Ah, esta silla es perfecta!\", dijo ella.
+
+¡Pero entonces la silla se rompió! \"Debo haber comido demasiada sopa\", pensó para sí misma Ricitos de Oro.
+
+Ella todavía estaba cansada, así que subió las escaleras a la habitación, donde había tres camas. Primero, Ricitos de Oro probó la cama de Papá Oso, pero a ella no le gustó. \"¡Esta cama es muy dura!\", dijo ella.
+
+Luego, ella probó la cama de Mamá Osa, pero no le gustó tampoco. \"¡Esta cama es muy suave!\", dijo ella.
+
+Finalmente, ella probó la cama de Bebé Oso. \"¡Esta cama es perfecta!\", dijo ella alegremente, y cayó en un profundo sueño lleno de sueños sobre galletas y gatitos.
+
+Pronto, los osos regresaron de su paseo, listos para comer su desayuno. Pero ellos se sorprendieron de ver las cucharas ya puestas en sus tazones de sopa. \"¡Alguien ha estado comiendo mi sopa!\", exclamó Papá Oso.
+
+\"¡Alguien ha estado comiendo mi sopa también!\", exclamó Mamá Osa.
+
+\"Alguien ha estado comiendo mi sopa... y mi tazón está vacío!\", sollozó Bebé Oso, quien amaba la sopa.
+
+Luego, los tres osos vieron que sus sillas habían sido usadas. \"¿Quién se ha estado sentando en mi silla?\", preguntó Papá Oso.
+
+\"¿Quién se ha estado sentando en mi silla?\", preguntó Mamá Osa.
+
+\"¿Quién se ha estado sentando en mi silla... y la rompió?\", preguntó Bebé Oso, y comenzó a llorar.
+
+Los tres osos subieron las escaleras rápidamente para revisar su habitación. \"Alguien ha estado durmiendo en mi cama!\", gruñó Papá Oso.
+
+\"Y alguien ha estado durmiendo en mi cama!\", gruñó Mamá Osa.
+
+\"Alguien ha estado durmiendo en mi cama... y aún está ahí!\", gritó Bebé Oso tan fuerte que Ricitos de Oro despertó.
+
+Cuando ella vio a los tres osos molestos, se puso muy asustada. Ella saltó de la cama, bajó corriendo las escaleras, corrió por la puerta y no paró de correr hasta que ella llegó a su propia casa.
+
+Adentro, ella encontró su propio tazón y su propia silla. Y esa noche, justo antes de que fuera a dormir en su propia cama, ella se prometió a sí misma:
+
+... \"Nunca comeré sopa de nuevo.\"""")
+
+
+Lesson.create(
+  user_id: admin.id,
+  language_id: chinese.id,
+  title: "森林王子 1: 人类宝宝",
+  diff_lev: 2,
+  url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643694943/f2da15ee29_fjwO6Zr_d1thre.png",
+  text:
+"""有 一天 晚上 ， 森林 里 特别 温暖 。 月光 明亮 ， 照进 狼 洞口 。 狼 爸爸 休息 一整天 后 醒过来 ， 打了个 哈欠 。 狼 妈妈 躺 在 近处 。 她 把 鼻子 放在 滚来滚去 叫个不停 的 四只 狼 宝宝 身边 。 狼 爸爸 伸 了 个 懒腰 。 “ 狼 妈妈 ， 又 该 去 打猎 了 。
+
+” 这时 ， 洞口 出现 一个 影子 ， 长着 一条 毛茸茸 的 尾巴 。 狼 爸爸 皱起 了 眉头 。 那 是 豺狼 塔巴 其 。 塔巴 其 总是 要 吃 的 ， 所以 狼 爸爸 和 狼 妈妈 很 讨厌 他 。 他们 也 很 怕 塔巴 其 ， 因为 塔巴 其 又 狡猾 ， 又 脾气坏 。 有时候 ， 他会 疯狂 地 在 森林 里 跑 ， 看见 什么 就 咬 什么 。 当 塔巴 其 发疯 的 时候 ， 甚至 连 凶恶 的 老虎 谢尔坎 也 离 他 远远 的 。 “ 我 肚子饿 。 ” 塔巴 其说 。 “ 你 进来 看看 吧 ， 塔巴 其 。 ” 狼 爸爸 叹 了 口气 说 ，“ 可是 ， 我 可以 向 你 保证 ， 这里 没有 食物 。 ” “ 我 也许 能 找点 吃 的 。
+
+” 塔巴 其 回答 。 他 慢慢 地朝洞 里面 走 去 ， 用 鼻子 到处 闻 。 很快 ， 他 就 发现 了 一根 放 了 很 久 的 骨头 ， 上面 有 一点 肉 。 “ 谢谢 你 的 食物 ， 很 好吃 。 ” 塔巴 其说 ， 舔 了 舔 嘴唇 。 他 盯 着 小小的 狼 宝宝 。 “ 哎哟 ， 你 的 孩子 们 真 好看 。 ” 狼 妈妈 走近 孩子 们 。 她 和 狼 爸爸 对视 了 一眼 ， 显得 很 不安 。 “ 啊 ， 还有 ......” 塔巴 其 继续 说 ，“ 谢尔坎 发现 了 几个 新 的 打猎 地点 。 他 告诉 我 他 会 暂时 在 这里 打猎 。 ” “ 在 这里 ？
+
+” 狼 妈妈 惊讶 地说 。 “ 可是 ， 他 没有 权利 在 这里 打猎 ！ ” 狼 爸爸 大 喊道 。 “ 谢尔坎 必须 呆 在 河边 ， 那 是 森林 法则 ！ ” 塔巴 其笑 了 。 “ 要 不要 我 告诉 他 你 在 担心 什么 ？ ” “ 出去 ！ ” 狼 爸爸 厉声 说 ，“ 去 跟 你 的 主人 打猎 吧 ， 塔巴 其 ， 你 折磨 了 我们 一个 晚上 ， 够 了 。 ” “ 我会 走 的 。 ” 塔巴 其 平静 地说 ，“ 不过 ， 别忘了 谢尔坎 的 新 打猎 地点 ， 我 警告 过 你 。 其实 ， 你 现在 就 能 听见 他 的 声音 。 他 在 下面 的 灌木 里 打猎 呢 。
+
+” 塔巴 其 走 后 ， 狼 爸爸 走出 了 洞 。 他 真的 听见 下面 山谷 里 传来 老虎 的 低 吼 。 狼 妈妈 走 出来 ， 站 在 他 旁边 。 “ 看来 谢尔坎 今晚 不会 吃 动物 ， 我 觉得 他会 吃 人 。 ” 狼 爸爸 龇 了 龇 白白的 牙齿 。 “ 森林 里 瓢虫 和 青蛙 那么 多 。 老虎 为什么 非得 吃 人 呢 ？ ” 狼 妈妈 叹 了 口气 。 森林 里 有 一条 重要 法则 —— 动物 不 可以 吃 人 。 老虎 的 吼声 越来越 大 ， 突然 ， 传来 了 哭声 。 狼 爸爸 和 狼 妈妈 听得见 谢尔坎 在 灌木丛 里 痛苦 地 滚来滚去 。 他 疼 哭 了 。
+
+“ 那 只 傻 老虎 可能 跑 进 了 人类 的 篝火 ， 听 上去 他 的 脚 好像 被 火烫 了 。 ” 狼 爸爸 说 。 狼 妈妈 动了动 一只 耳朵 ， 仔细 地 听 着 。 “ 好像 有 什么 东西 往 山顶 跑 呢 ！ ” 附近 的 灌木 沙沙 响 了 起来 。 狼 爸爸 放低 身子 准备 出击 。 可是 ， 突然 ， 狼 妈妈 惊讶 地 倒吸 了 一口气 。 “ 是 个 人类 宝宝 ！ ” 一个 小 男孩儿 站 在 狼 爸爸 和 狼 妈妈 面前 。 这个 小 人类 看着 狼 爸爸 的 脸 ， 眨 了 眨眼睛 。 “ 狼 爸爸 ！ ” 狼 妈妈 小声 说 ，“ 快 ！
+
+把 这 小 男孩儿 弄 到 我们 洞里 去 ！ ” 狼 爸爸 走上 前 ， 轻轻地 叼 住 了 小 男孩儿 的 脖子 。 然后 ， 把 小 男孩儿 叼 进洞 里 放在 了 狼 宝宝 们 旁边 。""")

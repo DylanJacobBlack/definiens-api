@@ -10,11 +10,7 @@ class WordsController < ApplicationController
   end
 
   def create
-    @word = Word.create(definitio: params[:lesson][:title], text: params[:lesson][:text], language_id: params[:lesson][:language_id], user_id: params[:lesson][:user_id], url: picture['url'])
+    @word = Word.create(definitio: params[:word][:name], text: params[:word][:definition], language_id: params[:word][:language_id], user_id: params[:word][:user_id], lesson_id: params[:word][:lesson_id] )
     @lesson.nil? ? :not_found : :created
-  end
-
-  def lesson_params
-    params.require(:lesson).permit(:title, :text, :language_id, :user_id, :url, :diff_lev)
   end
 end
