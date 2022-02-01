@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_23_032419) do
+ActiveRecord::Schema.define(version: 2022_02_01_013352) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,8 +68,25 @@ ActiveRecord::Schema.define(version: 2022_01_23_032419) do
     t.string "password_digest"
   end
 
+  create_table "words", force: :cascade do |t|
+    t.text "definition"
+    t.string "known"
+    t.bigint "lesson_id", null: false
+    t.bigint "user_id", null: false
+    t.bigint "language_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "name"
+    t.index ["language_id"], name: "index_words_on_language_id"
+    t.index ["lesson_id"], name: "index_words_on_lesson_id"
+    t.index ["user_id"], name: "index_words_on_user_id"
+  end
+
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "lessons", "languages"
   add_foreign_key "lessons", "users"
+  add_foreign_key "words", "languages"
+  add_foreign_key "words", "lessons"
+  add_foreign_key "words", "users"
 end

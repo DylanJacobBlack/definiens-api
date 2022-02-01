@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :lessons, only: %i[index show create]
       resources :sessions, only: %i[create destroy]
+      resources :words, only: %i[index show create update]
     end
   end
   resources :users, param: :_username
