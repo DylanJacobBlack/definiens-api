@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts "Clearing db..."
+Word.destroy_all
 Lesson.destroy_all
 User.destroy_all
 Language.destroy_all
@@ -38,11 +39,15 @@ german = Language.create(
   name: "de"
 )
 
+# puts "Creating test words..."
+
+# Word.create(name: "test", translation: "cat", language: chinese, user: admin, home_language: "en", known: 1)
+
 puts "Creating lessons..."
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: english.id,
+  user: admin,
+  language: english,
   title: "Twenty Thousand Leagues Under the Sea, Chapter One",
   diff_lev: 5,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062313/wiuymbx6zmwe3daelhqh.jpg",
@@ -125,8 +130,8 @@ Indeed, from this moment on, any maritime casualty without an established cause 
 This outrageous animal had to shoulder responsibility for all derelict vessels, whose numbers are unfortunately considerable, since out of those 3,000 ships whose losses are recorded annually at the marine insurance bureau, the figure for steam or sailing ships supposedly lost with all hands, in the absence of any news, amounts to at least 200! Now then, justly or unjustly, it was the \"monster\" who stood accused of their disappearance; and since, thanks to it, travel between the various continents had become more and more dangerous, the public spoke up and demanded straight out that, at all cost, the seas be purged of this fearsome cetacean.")
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: english.id,
+  user: admin,
+  language: english,
   title: "Story One: Mike is a Cook",
   diff_lev: 1,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062314/aayytmberomuxeahhmwa.jpg",
@@ -257,8 +262,8 @@ Bye for now."
 )
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: english.id,
+  user: admin,
+  language: english,
   title: "Story Two: Dustin Wants to Take a Vacation",
   diff_lev: 1,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062314/rlqiclhlm6kromabpcxg.jpg",
@@ -332,8 +337,8 @@ And there you have it, the story of Dustin who wanted to go on vacation. Thank y
 )
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: english.id,
+  user: admin,
+  language: english,
   title: "Story Three: Karen Gets a Cat",
   diff_lev: 1,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062315/xxlx3phn1y5b7ovosmwj.jpghttps://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062314/rlqiclhlm6kromabpcxg.jpg",
@@ -403,8 +408,8 @@ Eight: Karen is now very happy because she has a cat. Is Karen bored now? No, Ka
 )
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: english.id,
+  user: admin,
+  language: english,
   title: "Story Four: My Daughter is a Good Student",
   diff_lev: 1,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062315/td2isholdxq0bigrrgrf.jpg",
@@ -473,8 +478,8 @@ Seven: The daughter and Amy do well in school. Does the daughter do well in scho
 )
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: english.id,
+  user: admin,
+  language: english,
   title: "Canadian English: Chapter II, Part 1",
   diff_lev: 4,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062315/vek75y2wo3paukyjeghz.jpg",
@@ -494,8 +499,8 @@ These people wanted to remain loyal to the King of England. During the 19th cent
 
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: spanish.id,
+  user: admin,
+  language: spanish,
   title: " ¿Conoces a ese chico?",
   diff_lev: 1,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643442628/Elegant-Big-sombrero-hat-Hat-Large-Brim-Fedoras-Wool-Felt-Hat-Women-Bow-Panama-Cap-Australian.jpg_640x640_c2cvn7.jpg",
@@ -517,8 +522,8 @@ Es de mi edificio, pero no sé cómo se llama. ¿Por qué lo preguntas?
 A: Nada, por curiosidad.")
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: spanish.id,
+  user: admin,
+  language: spanish,
   title: "Hay almas que tienen",
   diff_lev: 3,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643442855/1642496508_5d377f2c_jkb9xy.jpg",
@@ -532,8 +537,8 @@ Otras almas tienen dolientes espectros de pasiones. Frutas con gusanos. Ecos de 
 Cada piedra dice: \"¡Dios está muy lejos! \"")
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: spanish.id,
+  user: admin,
+  language: spanish,
   title: "Historia de la célebre Reina de España Doña Juana",
   diff_lev: 6,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643443412/1642497003_a094e69d_xgdl5t.jpg",
@@ -588,8 +593,8 @@ Ningun contratiempo se habia notado, ninguna cosa que hubiera venido á turbar l
 
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: spanish.id,
+  user: admin,
+  language: spanish,
   title: "Levantarse",
   diff_lev: 2,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643692818/1642151671_10719f51_z77128.jpg",
@@ -610,11 +615,11 @@ Me gusta madrugar y no tengo muchos problemas para levantarme, pero a veces teng
 
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: spanish.id,
+  user: admin,
+  language: spanish,
   title: "La nota de español",
   diff_lev: 3,
-  url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643693358/notas_u6nhuk.jpg",
+  url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643705006/espa_C3_B1ol-con-juan-1001-reasons-to-learn-h6yquAwjN3H-_4FShZ6uT9E.1400x1400_gmbdxs.jpg",
   text:
 "Hola, chicos, ¿qué tal? Bienvenidos a un nuevo episodio de Español con Juan, un podcast en español para aprender español.
 
@@ -721,8 +726,8 @@ Os espero la próxima semana, ¿de acuerdo? Os espero la próxima semana aquí, 
 
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: spanish.id,
+  user: admin,
+  language: spanish,
   title: "Ricitos de Oro - Goldilocks",
   diff_lev: 2,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643693994/d821d1e907_SMJ6uJk_opzc5z.jpg",
@@ -785,10 +790,10 @@ Adentro, ella encontró su propio tazón y su propia silla. Y esa noche, justo a
 
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: chinese.id,
+  user: admin,
+  language: chinese,
   title: "森林王子 1: 人类宝宝",
-  diff_lev: 2,
+  diff_lev: 3,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643694943/f2da15ee29_fjwO6Zr_d1thre.png",
   text:
 """有 一天 晚上 ， 森林 里 特别 温暖 。 月光 明亮 ， 照进 狼 洞口 。 狼 爸爸 休息 一整天 后 醒过来 ， 打了个 哈欠 。 狼 妈妈 躺 在 近处 。 她 把 鼻子 放在 滚来滚去 叫个不停 的 四只 狼 宝宝 身边 。 狼 爸爸 伸 了 个 懒腰 。 “ 狼 妈妈 ， 又 该 去 打猎 了 。
@@ -797,10 +802,117 @@ Lesson.create(
 
 ” 塔巴 其 回答 。 他 慢慢 地朝洞 里面 走 去 ， 用 鼻子 到处 闻 。 很快 ， 他 就 发现 了 一根 放 了 很 久 的 骨头 ， 上面 有 一点 肉 。 “ 谢谢 你 的 食物 ， 很 好吃 。 ” 塔巴 其说 ， 舔 了 舔 嘴唇 。 他 盯 着 小小的 狼 宝宝 。 “ 哎哟 ， 你 的 孩子 们 真 好看 。 ” 狼 妈妈 走近 孩子 们 。 她 和 狼 爸爸 对视 了 一眼 ， 显得 很 不安 。 “ 啊 ， 还有 ......” 塔巴 其 继续 说 ，“ 谢尔坎 发现 了 几个 新 的 打猎 地点 。 他 告诉 我 他 会 暂时 在 这里 打猎 。 ” “ 在 这里 ？
 
-” 狼 妈妈 惊讶 地说 。 “ 可是 ， 他 没有 权利 在 这里 打猎 ！ ” 狼 爸爸 大 喊道 。 “ 谢尔坎 必须 呆 在 河边 ， 那 是 森林 法则 ！ ” 塔巴 其笑 了 。 “ 要 不要 我 告诉 他 你 在 担心 什么 ？ ” “ 出去 ！ ” 狼 爸爸 厉声 说 ，“ 去 跟 你 的 主人 打猎 吧 ， 塔巴 其 ， 你 折磨 了 我们 一个 晚上 ， 够 了 。 ” “ 我会 走 的 。 ” 塔巴 其 平静 地说 ，“ 不过 ， 别忘了 谢尔坎 的 新 打猎 地点 ， 我 警告 过 你 。 其实 ， 你 现在 就 能 听见 他 的 声音 。 他 在 下面 的 灌木 里 打猎 呢 。
+” 狼 妈妈 惊讶 地说 。 “ 可是 ， 他 没有 权利 在 这里 打猎!” 狼 爸爸 大 喊道 。 “ 谢尔坎 必须 呆 在 河边 ， 那 是 森林 法则 !” 塔巴 其笑 了 。 “ 要 不要 我 告诉 他 你 在 担心 什么 ？ ” “ 出去!” 狼 爸爸 厉声 说 ，“ 去 跟 你 的 主人 打猎 吧 ， 塔巴 其 ， 你 折磨 了 我们 一个 晚上 ， 够 了 。 ” “ 我会 走 的 。 ” 塔巴 其 平静 地说 ，“ 不过 ， 别忘了 谢尔坎 的 新 打猎 地点 ， 我 警告 过 你 。 其实 ， 你 现在 就 能 听见 他 的 声音 。 他 在 下面 的 灌木 里 打猎 呢 。
 
 ” 塔巴 其 走 后 ， 狼 爸爸 走出 了 洞 。 他 真的 听见 下面 山谷 里 传来 老虎 的 低 吼 。 狼 妈妈 走 出来 ， 站 在 他 旁边 。 “ 看来 谢尔坎 今晚 不会 吃 动物 ， 我 觉得 他会 吃 人 。 ” 狼 爸爸 龇 了 龇 白白的 牙齿 。 “ 森林 里 瓢虫 和 青蛙 那么 多 。 老虎 为什么 非得 吃 人 呢 ？ ” 狼 妈妈 叹 了 口气 。 森林 里 有 一条 重要 法则 —— 动物 不 可以 吃 人 。 老虎 的 吼声 越来越 大 ， 突然 ， 传来 了 哭声 。 狼 爸爸 和 狼 妈妈 听得见 谢尔坎 在 灌木丛 里 痛苦 地 滚来滚去 。 他 疼 哭 了 。
 
-“ 那 只 傻 老虎 可能 跑 进 了 人类 的 篝火 ， 听 上去 他 的 脚 好像 被 火烫 了 。 ” 狼 爸爸 说 。 狼 妈妈 动了动 一只 耳朵 ， 仔细 地 听 着 。 “ 好像 有 什么 东西 往 山顶 跑 呢 ！ ” 附近 的 灌木 沙沙 响 了 起来 。 狼 爸爸 放低 身子 准备 出击 。 可是 ， 突然 ， 狼 妈妈 惊讶 地 倒吸 了 一口气 。 “ 是 个 人类 宝宝 ！ ” 一个 小 男孩儿 站 在 狼 爸爸 和 狼 妈妈 面前 。 这个 小 人类 看着 狼 爸爸 的 脸 ， 眨 了 眨眼睛 。 “ 狼 爸爸 ！ ” 狼 妈妈 小声 说 ，“ 快 ！
+“ 那 只 傻 老虎 可能 跑 进 了 人类 的 篝火 ， 听 上去 他 的 脚 好像 被 火烫 了 。 ” 狼 爸爸 说 。 狼 妈妈 动了动 一只 耳朵 ， 仔细 地 听 着 。 “ 好像 有 什么 东西 往 山顶 跑 呢!” 附近 的 灌木 沙沙 响 了 起来 。 狼 爸爸 放低 身子 准备 出击 。 可是 ， 突然 ， 狼 妈妈 惊讶 地 倒吸 了 一口气 。 “ 是 个 人类 宝宝!” 一个 小 男孩儿 站 在 狼 爸爸 和 狼 妈妈 面前 。 这个 小 人类 看着 狼 爸爸 的 脸 ， 眨 了 眨眼睛 。 “ 狼 爸爸!” 狼 妈妈 小声 说 ，“ 快!
 
-把 这 小 男孩儿 弄 到 我们 洞里 去 ！ ” 狼 爸爸 走上 前 ， 轻轻地 叼 住 了 小 男孩儿 的 脖子 。 然后 ， 把 小 男孩儿 叼 进洞 里 放在 了 狼 宝宝 们 旁边 。""")
+把 这 小 男孩儿 弄 到 我们 洞里 去!” 狼 爸爸 走上 前 ， 轻轻地 叼 住 了 小 男孩儿 的 脖子 。 然后 ， 把 小 男孩儿 叼 进洞 里 放在 了 狼 宝宝 们 旁边 。""")
+
+
+Lesson.create(
+  user: admin,
+  language: chinese,
+  title: "森林王子 2: 岩石会议",
+  diff_lev: 3,
+  url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643704665/Screen_Shot_2022-02-01_at_4.34.26_PM_txncmd.png",
+  text:"""森林 王子 2: 岩石 会议 狼 妈妈 非常 惊讶 ， 目不转睛 地 盯 着 那个 小 人类 。 “ 真小!  ” 狼 妈妈 温柔 地说 。 那个 小 男孩儿 挤进 两只 狼 宝宝 中间 取暖 。 “ 你 看! 他 不怕 我们 ， 也 不怕 宝宝 们 。 ” “ 我 听说 过有 人类 小孩儿 和 狼群 一起 生活 。” 狼 爸爸 说 ，“ 可是 ， 在 我们 狼群 里 ， 我 从来没 见过 。 ” 这时 ， 狼 爸爸 和 狼 妈妈 听到 什么 声音 ， 朝 洞口 转过身 去 。 原来 是 塔巴 其 和 老虎 谢尔坎来 了 。 “ 那个 小孩儿 在 这儿 ， 主人! ” 豺狼 兴奋 地喊 着 ，“ 我 看见 他 了 。 ” “ 谢尔坎 ， 您 的 来访 让 我们 非常 荣幸 。 ” 狼 爸爸 很 有 礼貌 地说 。 但 他 的 双眼 却 闪烁着 愤怒 。 “ 您 需要 什么 ？ ” “ 一个 人类 孩子 朝 这边儿 走 了 。 ” 谢尔坎 说 ，“ 他 的 父母 逃跑 了 。 把 人类 的 孩子 交给 我 。” 幸好 洞口 很窄 ， 谢尔坎 进不来 。 “ 我们 狼 是 自由 的 动物 。 ” 狼 爸爸 说 ，“ 我们 听头 狼 的话 ， 不 听 你 的 。 ” 老虎 的 怒吼 在 洞里 回荡 。 狼 妈妈 跳到 了 谢尔坎 面前 。 在 黑暗 中 ， 她 的 眼睛 像 两个 绿色 的 月亮 。 “ 那个 人类 孩子 是 我 的! ” 狼 妈妈 咆哮 着 ，“ 孩子 不会 被 杀死 的 。 孩子 会 和 狼群 一起 奔跑 ， 和 狼群 一起 打猎 。 现在 ， 请 你 离开 ， 谢尔坎!” 狼 爸爸 惊讶 地 看着 这 一幕 。 狼 爸爸 忘 了 他 的 妻子 生气 时会 有 多 可怕 。
+  
+  谢尔坎 退到 洞口 外面 。 “ 我 等 着 看 狼群 会 怎么 处理 人类 的 孩子! ” 他 龇牙 低 吼 ，“ 那个 孩子 是 我 的 ， 他会 死 在 我 的 牙 下!” 狼 妈妈 跳 到 宝宝 们 中间 。 狼 爸爸 看着 老虎 大步 离开 。 “ 谢尔坎 说 了 一个 事实 。 “ 狼 爸爸 说 着 叹 了 一口气 ，“ 我们 必须 给 狼群 看 这个 人类 孩子 。 你 真的 打算 收留 他 吗 ？ ” “ 我 当然 要 收留 他!” 狼 妈妈 厉声 说 ，“ 这个 可怜 的 小家伙 晚上 自己 饿着肚子 来到 这里 。 我要 给 他 起名叫 毛 克利 。 ” 她 接着 说 ，“ 总有一天 ， 他会 抓到 谢尔坎 ， 就 像 那 只 老虎 抓 他 一样 。” 狼 爸爸 很 担心 。 “ 我们 狼群 会 说 什么 呢 ？ ” 森林 法则 很 清楚 。 狼群 保护 小狼 直到 他们 足够 强大 去 自己 打猎 。 但是 ， 狼群 好像 不会 保护 一个 人类 宝宝 。 “ 我们 以后 再说 这件 事 吧 。 ” 狼 妈妈 坚定 地 回答 。 * 每个 月 月 圆 的 时候 ， 狼群 就 开 一次 会 。 所有 的 新 父母 都 要 给 大家 看 他们 的 孩子 们 。 在 下 一次 狼群 会议 的 那天 晚上 ， 狼 爸爸 和 狼 妈妈 去 参加 岩石 会议 。 狼 宝宝 们 和 毛 克利 跟 在 他们 后面 跑 。 岩石 会议 在 山顶 上开 ， 那里 有 很多 石头 和 巨石 。
+  
+  阿克拉 是 最 厉害 的 大灰狼 ， 他 趴在 一块 岩石 上 。 现在 ， 他 领导 这个 狼群 已经 一年 了 。 他 是 一只 智慧 、 健壮 的 头 狼 ， 了解 人类 的 方式 和 习俗 。 岩石 会议 非常 安静 。 所有 的 父母 都 围成 了 一个 圆圈 。 在 圆圈 中央 ， 狼 宝宝 们 一起 打滚 、 玩耍 。 狼 父母 们 一个 接 一个 地 给 大家 看 自己 的 孩子 。 “ 哦 ， 大家 快 看! ” 阿克拉 喊道 。 狼 妈妈 们 激动 地 重复 道:“ 哦 ， 大家 快 看 ！ ” 狼 妈妈 的 毛抖 了 一下 。 差不多 到时候 该 给 大家 看毛 克利 了 。
+  
+  狼群 看到 这个 长相 奇怪 的 人类 宝宝 会 说 什么 呢 ？""")
+
+  Lesson.create(
+    user: admin,
+    language: chinese,
+    title: "马云说英语被纠正！主持人光速打脸",
+    diff_lev: 4,
+    url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643704221/maxresdefault_a5ab6f21._fqzvwd.jpg",
+    text:"""今天 呢 ， 我 在 网上 看到 了 一条 热 搜 ， 这条 热 搜 的 内容 是
+
+    马云 说 英语 被 纠正
+    
+    大家 都 知道 马云 的 英语 很 好 对 不 对 ， 所以 我 就 很 好奇
+    
+    到底 是 谁 纠正 了 他 的 英语 呢 ？ 我们 马上 来看 一下 吧
+    
+    ok， 我们 都 知道 发生 了 什么 事 了 对 不 对
+    
+    看上去 呢 ， 像 马云 在 表达 的 时候 出现 了 错误
+    
+    然后 女 记者 女 主持人 呢 纠正 了 他
+    
+    场面 一度 很 尴尬
+    
+    那么 我们 就 一点点 来 剖析 好 了
+    
+    我们 首先 看 一下 马云 的 表达 到底 有没有 问题
+    
+    大家 都 可以 看到 其实 马云 在 这里 说 should 的 时候 呢
+    
+    他 只 说 了 一半 ， 有点像 shu，shu
+    
+    说明 呢 他 说 突然 不想 说 这个 单词 或者 知道 自己 突然 说错 了
+    
+    马上 收回 来 的 这种 感觉
+    
+    大多数 人 还是 认为 他 说 的 是 will， 所以 马云 的 表达 其实 没有 错
+    
+    只是 他 前面 有点 卡壳 了 一下
+    
+    那 我们 再 看 一下 第二个 部分 ， 主持人 的 纠正 到底 有没有 问题
+    
+    从 明确 意思 这个 方面 出发 的话
+    
+    主持人 这样 纠正 他 虽然 让 他 很 尴尬
+    
+    但是 没有 特别 大 的 原则上 的 问题
+    
+    但是 我 觉得 她 可以 先 让 马云 把 话 说完
+    
+    把 这句 话 说完 再 去 打断 他 比较 好
+    
+    而 不是 直接 说 ， 等等等等 ， 等 一下 等 一下 ， 你 那句话 说错 了
+    
+    这样的话 就 有 一点 没有 礼貌 我 觉得
+    
+    第三点 ， 我们 来看 一下 这个 女 主持人 的 英语 实力 有没有 那么 厉害 呢
+    
+    厉害 到 完全 不顾 马云 的 面子
+    
+    ok， 大家 其实 看到 了 她 的 发音 其实 说 的 是 shud 不同于 wud
+    
+    她 这 两个 发音 其实 都 发错 了
+    
+    它 不是 shud 也 不是 wud， 它 是 should 和 would
+    
+    然后 这点 上 马云 比 她 强 多 了 ， 我们 马上 来看 一下
+    
+    大家 都 看到 了 其实 马云 的 should 和 would 发 的 很 标准 ， 比 主持人 好 很多很多
+    
+    第四点 我 想 说 的 是 主持人 的 语气 里 其实 有 一点点 看不起 马云 的 英语 的 感觉
+    
+    就是 ， 老姐 今天 要 教训 你 ， 今天 要教 你 一堂 英语课 的 感觉
+    
+    所以 呢 ， 我 觉得 主持人 如果 真的 要 打断 的话
+    
+    她 可以 礼貌 一点 ， 会 好 很多
+    
+    我 平时 呢 也 很少 去 评价 别人 的 英语 好不好
+    
+    我 一般 都 是 鼓励 别人 很少 去 评判 别人
+    
+    但是 呢 这个 主持人 这次 做 得 有 一点点 过分
+    
+    所以 我 稍微 提了 一下 我 自己 的 意见
+    
+    如果 有 一些 冒犯 希望 大家 不要 介意
+    
+    那 今天 节目 就 到此为止 ， 我们 下次 再见 吧 ！""")
+
+
+
+
