@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts "Clearing db..."
+Word.destroy_all
 Lesson.destroy_all
 User.destroy_all
 Language.destroy_all
@@ -38,11 +39,15 @@ german = Language.create(
   name: "de"
 )
 
+# puts "Creating test words..."
+
+# Word.create(name: "test", translation: "cat", language: chinese, user: admin, home_language: "en", known: 1)
+
 puts "Creating lessons..."
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: english.id,
+  user: admin,
+  language: english,
   title: "Twenty Thousand Leagues Under the Sea, Chapter One",
   diff_lev: 5,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062313/wiuymbx6zmwe3daelhqh.jpg",
@@ -125,8 +130,8 @@ Indeed, from this moment on, any maritime casualty without an established cause 
 This outrageous animal had to shoulder responsibility for all derelict vessels, whose numbers are unfortunately considerable, since out of those 3,000 ships whose losses are recorded annually at the marine insurance bureau, the figure for steam or sailing ships supposedly lost with all hands, in the absence of any news, amounts to at least 200! Now then, justly or unjustly, it was the \"monster\" who stood accused of their disappearance; and since, thanks to it, travel between the various continents had become more and more dangerous, the public spoke up and demanded straight out that, at all cost, the seas be purged of this fearsome cetacean.")
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: english.id,
+  user: admin,
+  language: english,
   title: "Story One: Mike is a Cook",
   diff_lev: 1,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062314/aayytmberomuxeahhmwa.jpg",
@@ -257,8 +262,8 @@ Bye for now."
 )
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: english.id,
+  user: admin,
+  language: english,
   title: "Story Two: Dustin Wants to Take a Vacation",
   diff_lev: 1,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062314/rlqiclhlm6kromabpcxg.jpg",
@@ -332,8 +337,8 @@ And there you have it, the story of Dustin who wanted to go on vacation. Thank y
 )
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: english.id,
+  user: admin,
+  language: english,
   title: "Story Three: Karen Gets a Cat",
   diff_lev: 1,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062315/xxlx3phn1y5b7ovosmwj.jpghttps://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062314/rlqiclhlm6kromabpcxg.jpg",
@@ -403,8 +408,8 @@ Eight: Karen is now very happy because she has a cat. Is Karen bored now? No, Ka
 )
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: english.id,
+  user: admin,
+  language: english,
   title: "Story Four: My Daughter is a Good Student",
   diff_lev: 1,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062315/td2isholdxq0bigrrgrf.jpg",
@@ -473,8 +478,8 @@ Seven: The daughter and Amy do well in school. Does the daughter do well in scho
 )
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: english.id,
+  user: admin,
+  language: english,
   title: "Canadian English: Chapter II, Part 1",
   diff_lev: 4,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643062315/vek75y2wo3paukyjeghz.jpg",
@@ -494,8 +499,8 @@ These people wanted to remain loyal to the King of England. During the 19th cent
 
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: spanish.id,
+  user: admin,
+  language: spanish,
   title: " ¿Conoces a ese chico?",
   diff_lev: 1,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643442628/Elegant-Big-sombrero-hat-Hat-Large-Brim-Fedoras-Wool-Felt-Hat-Women-Bow-Panama-Cap-Australian.jpg_640x640_c2cvn7.jpg",
@@ -517,8 +522,8 @@ Es de mi edificio, pero no sé cómo se llama. ¿Por qué lo preguntas?
 A: Nada, por curiosidad.")
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: spanish.id,
+  user: admin,
+  language: spanish,
   title: "Hay almas que tienen",
   diff_lev: 3,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643442855/1642496508_5d377f2c_jkb9xy.jpg",
@@ -532,8 +537,8 @@ Otras almas tienen dolientes espectros de pasiones. Frutas con gusanos. Ecos de 
 Cada piedra dice: \"¡Dios está muy lejos! \"")
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: spanish.id,
+  user: admin,
+  language: spanish,
   title: "Historia de la célebre Reina de España Doña Juana",
   diff_lev: 6,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643443412/1642497003_a094e69d_xgdl5t.jpg",
@@ -588,8 +593,8 @@ Ningun contratiempo se habia notado, ninguna cosa que hubiera venido á turbar l
 
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: spanish.id,
+  user: admin,
+  language: spanish,
   title: "Levantarse",
   diff_lev: 2,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643692818/1642151671_10719f51_z77128.jpg",
@@ -610,8 +615,8 @@ Me gusta madrugar y no tengo muchos problemas para levantarme, pero a veces teng
 
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: spanish.id,
+  user: admin,
+  language: spanish,
   title: "La nota de español",
   diff_lev: 3,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643705006/espa_C3_B1ol-con-juan-1001-reasons-to-learn-h6yquAwjN3H-_4FShZ6uT9E.1400x1400_gmbdxs.jpg",
@@ -721,8 +726,8 @@ Os espero la próxima semana, ¿de acuerdo? Os espero la próxima semana aquí, 
 
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: spanish.id,
+  user: admin,
+  language: spanish,
   title: "Ricitos de Oro - Goldilocks",
   diff_lev: 2,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643693994/d821d1e907_SMJ6uJk_opzc5z.jpg",
@@ -785,10 +790,10 @@ Adentro, ella encontró su propio tazón y su propia silla. Y esa noche, justo a
 
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: chinese.id,
+  user: admin,
+  language: chinese,
   title: "森林王子 1: 人类宝宝",
-  diff_lev: 2,
+  diff_lev: 3,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643694943/f2da15ee29_fjwO6Zr_d1thre.png",
   text:
 """有 一天 晚上 ， 森林 里 特别 温暖 。 月光 明亮 ， 照进 狼 洞口 。 狼 爸爸 休息 一整天 后 醒过来 ， 打了个 哈欠 。 狼 妈妈 躺 在 近处 。 她 把 鼻子 放在 滚来滚去 叫个不停 的 四只 狼 宝宝 身边 。 狼 爸爸 伸 了 个 懒腰 。 “ 狼 妈妈 ， 又 该 去 打猎 了 。
@@ -807,10 +812,10 @@ Lesson.create(
 
 
 Lesson.create(
-  user_id: admin.id,
-  language_id: chinese.id,
+  user: admin,
+  language: chinese,
   title: "森林王子 2: 岩石会议",
-  diff_lev: 2,
+  diff_lev: 3,
   url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643704665/Screen_Shot_2022-02-01_at_4.34.26_PM_txncmd.png",
   text:"""森林 王子 2: 岩石 会议 狼 妈妈 非常 惊讶 ， 目不转睛 地 盯 着 那个 小 人类 。 “ 真小!  ” 狼 妈妈 温柔 地说 。 那个 小 男孩儿 挤进 两只 狼 宝宝 中间 取暖 。 “ 你 看! 他 不怕 我们 ， 也 不怕 宝宝 们 。 ” “ 我 听说 过有 人类 小孩儿 和 狼群 一起 生活 。” 狼 爸爸 说 ，“ 可是 ， 在 我们 狼群 里 ， 我 从来没 见过 。 ” 这时 ， 狼 爸爸 和 狼 妈妈 听到 什么 声音 ， 朝 洞口 转过身 去 。 原来 是 塔巴 其 和 老虎 谢尔坎来 了 。 “ 那个 小孩儿 在 这儿 ， 主人! ” 豺狼 兴奋 地喊 着 ，“ 我 看见 他 了 。 ” “ 谢尔坎 ， 您 的 来访 让 我们 非常 荣幸 。 ” 狼 爸爸 很 有 礼貌 地说 。 但 他 的 双眼 却 闪烁着 愤怒 。 “ 您 需要 什么 ？ ” “ 一个 人类 孩子 朝 这边儿 走 了 。 ” 谢尔坎 说 ，“ 他 的 父母 逃跑 了 。 把 人类 的 孩子 交给 我 。” 幸好 洞口 很窄 ， 谢尔坎 进不来 。 “ 我们 狼 是 自由 的 动物 。 ” 狼 爸爸 说 ，“ 我们 听头 狼 的话 ， 不 听 你 的 。 ” 老虎 的 怒吼 在 洞里 回荡 。 狼 妈妈 跳到 了 谢尔坎 面前 。 在 黑暗 中 ， 她 的 眼睛 像 两个 绿色 的 月亮 。 “ 那个 人类 孩子 是 我 的! ” 狼 妈妈 咆哮 着 ，“ 孩子 不会 被 杀死 的 。 孩子 会 和 狼群 一起 奔跑 ， 和 狼群 一起 打猎 。 现在 ， 请 你 离开 ， 谢尔坎!” 狼 爸爸 惊讶 地 看着 这 一幕 。 狼 爸爸 忘 了 他 的 妻子 生气 时会 有 多 可怕 。
   
@@ -821,8 +826,8 @@ Lesson.create(
   狼群 看到 这个 长相 奇怪 的 人类 宝宝 会 说 什么 呢 ？""")
 
   Lesson.create(
-    user_id: admin.id,
-    language_id: chinese.id,
+    user: admin,
+    language: chinese,
     title: "马云说英语被纠正！主持人光速打脸",
     diff_lev: 4,
     url: "https://res.cloudinary.com/hxgqxwxqv/image/upload/v1643704221/maxresdefault_a5ab6f21._fqzvwd.jpg",
