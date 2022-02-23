@@ -1,5 +1,4 @@
 class Word < ApplicationRecord
-  belongs_to :lesson
   belongs_to :user
   belongs_to :language
   validates :name, presence: true, uniqueness: true
