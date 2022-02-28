@@ -1,5 +1,6 @@
 class Api::V1::WordsController < Api::V1::BaseController
   skip_before_action :verify_authenticity_token
+  before_action :authorize_request
 
   def index
     @words = Word.all
@@ -10,7 +11,8 @@ class Api::V1::WordsController < Api::V1::BaseController
   end
 
   def create
-    @word = Word.create(translation: params[:word][:translation], name: params[:word][:name], language_id: params[:word][:language_id], user_id: params[:word][:user_id], home_language: "en" )
+    puts @current_user
+    @word = Word.create(translation: params[:word][:translation], name: params[:word][:name], language_id: params[:word][:language_id], home_language: "en" )
     @word.nil? ? :not_found : :created
   end
 end
